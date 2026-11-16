@@ -43,6 +43,15 @@ docker build -t cricnex .
 docker run -p 4000:4000 -v cricnex-data:/data cricnex
 ```
 
+**Vercel (serverless):**
+```
+vercel deploy
+```
+Or connect the repo on https://vercel.com → it reads `vercel.json`.
+⚠️ Vercel's filesystem is ephemeral: SQLite data in `/tmp` is reset on cold
+starts. For a production scoring app use Railway/Render/Fly.io with a
+persistent volume instead. Vercel is fine for demos.
+
 | Username | Password        | Role  |
 |----------|-----------------|-------|
 | `admin`  | `cricnex-admin` | admin |
