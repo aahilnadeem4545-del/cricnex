@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: cricnex
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CRICNEX_DATA_DIR
+        value: /data
+      - key: CRICNEX_BACKUP_DIR
+        value: /data/backups
+    disk:
+      name: cricnex-data
+      mountPath: /data
+      sizeGB: 1

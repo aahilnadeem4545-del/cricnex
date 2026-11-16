@@ -1,0 +1,14 @@
+{
+  "name": "CRICNEX",
+  "short_name": "CRICNEX",
+  "description": "Cricket management and ball-by-ball scoring",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b0f0e",
+  "theme_color": "#0b0f0e",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

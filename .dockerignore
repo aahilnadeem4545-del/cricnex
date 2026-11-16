@@ -1,0 +1,10 @@
+node_modules
+dist
+src/ui/dist
+data
+backups
+docs
+tests
+*.log
+.git
+.gitignore
